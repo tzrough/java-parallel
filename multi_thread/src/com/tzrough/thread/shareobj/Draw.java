@@ -15,9 +15,9 @@ public class Draw implements Runnable
 	public synchronized void run()
 	{
 		
-		System.out.println("---  账户余额为" + bankAccount.money + ", 将执行存款操作  ---");
+		System.out.println("---  账户余额为" + bankAccount.money + ", 将执行取款操作  ---");
 		
-		if(bankAccount.money < 0) 
+		if(bankAccount.money <= 0) 
 		{
 			System.out.println("账户余额为0, 请充值");
 			return;
